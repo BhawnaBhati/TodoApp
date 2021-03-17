@@ -1,0 +1,3 @@
+
+- refreshing of browser
+- on logout= state.tasks stays same - if other user logs in he will see previous user tasks
