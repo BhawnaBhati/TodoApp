@@ -4,8 +4,9 @@ import axios from "axios";
 import _ from "lodash";
 
 import { getMessageFromAxiosError } from "app/utils/axios";
+import env from "react-dotenv";
 
-const loginUrl = "http://localhost:4000/login";
+const loginUrl = `${env.API_SERVER_URL}/login`;
 
 function* loginUser(action) {
   try {
@@ -26,5 +27,6 @@ function* loginUser(action) {
 }
 
 export function* userSaga() {
+  console.log(process.env);
   yield takeLatest(actions.loginRequest.type, loginUser);
 }

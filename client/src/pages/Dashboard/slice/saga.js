@@ -3,9 +3,9 @@ import { taskActions as actions } from ".";
 import { getMessageFromAxiosError } from "app/utils/axios";
 
 import axios from "axios";
-// import _ from "lodash";
+import env from "react-dotenv";
 
-const baseUrl = "http://localhost:4000";
+const baseUrl = env.API_SERVER_URL;
 const dashboardUrl = `${baseUrl}/dashboard`;
 const taskUrl = `${baseUrl}/tasks`;
 
