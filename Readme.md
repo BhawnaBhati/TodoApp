@@ -58,5 +58,9 @@ npm test
 ## Scope of improvement
 
 - **Error handling** - All errors are being thrown to users with whatever message is generated, need to convert to custom user-friendly error messages
-- Error notification in front-end has to be added
 - Attach pg-monitor to record postgres queries/errors
+
+## Few important features that could not be added due to time crunch
+
+- Notifications in front end based on UI events or API responses, for eg. completed tasks can not be deleted but no such notification.
+- Validations are completely missing- someone can add task without any text.
