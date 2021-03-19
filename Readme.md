@@ -6,6 +6,7 @@
   - NodeJS
   - Typescript
   - PostgreSQL
+  - Jest and supertest for unit test cases
 - Frontend
   - ReactJS (using function components and hooks) with Redux
   - Axios for API calls
